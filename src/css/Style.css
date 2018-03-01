@@ -1,0 +1,161 @@
+body {
+    background: url('https://lumiere-a.akamaihd.net/v1/images/fondor_e5c6701b.jpeg?region=0%2C0%2C1560%2C878&width=768'), linear-gradient(to right ,#000,#808080) no-repeat center;
+    background-size: cover;
+    font-size: 20px;
+}
+
+.app_title{
+    display:flex;
+    justify-content:center;
+    text-shadow:2px 2px 5px rgb(155,155,155);
+    color:yellow;
+    font-size:1.8em;
+}
+
+.loader_wrapper{
+    width:100%;
+    height:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader{
+    width:100px;
+    height:100px;
+    color:yellow;
+    text-shadow:2px 2px 5px rgb(155,155,155);
+    position:relative;
+    font-size: 3rem;
+}
+
+@keyframes loader1 {
+    from {left:200px;top:250px;}
+    to {left:0;top:0}
+}
+
+@keyframes loader2 {
+    from {left:150px;top:200px;}
+    to {left:0;top:0}
+}
+
+@keyframes loader3 {
+    from {left:100px;top:150px;}
+    to {left:0;top:0}
+}
+
+#loader1 {
+    animation:loader1 2s;
+}
+#loader2 {
+    animation:loader2 3s;
+}
+#loader3 {
+    animation:loader3 4s;
+}
+
+.main{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.truncate{
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+.character_platform{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:30px 0 30px 30px;
+}
+
+.character_platform h3{
+    margin:0 auto 15px auto;
+    line-height:35px;
+}
+
+.character_platform label{
+    margin:3px 0;
+}
+
+.search_platform{
+    border-radius:15px;
+}
+
+.search_platform input{
+    box-shadow:0 0 3px;
+    width:100%;
+    height:30px;
+    padding:5px 10px;
+    border-radius:inherit;
+    margin-bottom:20px;
+    outline:none;
+    font-size:inherit;
+}
+
+.search_platform input:hover{
+    box-shadow:0 0 15px yellow;
+}
+
+.items_list{
+    box-shadow:0 0 3px;
+    border:1px solid rgba(155,155,155,0.3);
+    border-radius:3px;
+    background:#fff;
+    width:500px;
+    height:800px;
+    overflow:auto;
+}
+
+.items_list li{
+    line-height:25px;
+}
+
+.items_list li:hover{
+    background:#000;
+    color:#fff;
+    cursor:pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding:10px 30px;
+    margin:0;
+}
+
+.details_platform{
+    min-width:450px;
+    max-width:650px;
+    height:458px;
+    border-radius: 3px;
+    background:#fff;
+    box-shadow: 0 0 3px;
+    border:1px solid rgba(155,155,155,0.3);
+    overflow-y:auto;
+}
+
+.close_btn{
+    background:#000;
+    color:#fff;
+    border-radius:20%;
+    border:none;
+    outline:none;
+    box-shadow: 0 0 5px black;
+    float:right;
+    margin:5px;
+    cursor:pointer;
+}
+
+.expose{
+    cursor: pointer;
+    color:#4169e1;
+}
+
+.expose:hover{
+    text-decoration: underline;
+}
